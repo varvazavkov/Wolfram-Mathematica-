@@ -1,0 +1,1856 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     72569,       1848]
+NotebookOptionsPosition[     64027,       1692]
+NotebookOutlinePosition[     64444,       1708]
+CellTagsIndexPosition[     64401,       1705]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:041b\:0430\:0431\:043e\:0440\:0430\:0442\:043e\:0440\:043d\:0430\:044f\
+ \:0440\:0430\:0431\:043e\:0442\:0430 \:211610", "Title",
+ CellChangeTimes->{{3.84552752311309*^9, 3.8455275342541113`*^9}, 
+   3.8460812465264564`*^9},ExpressionUUID->"438ae5f4-80a7-4a07-8d07-\
+7a363c5dd5a3"],
+
+Cell["\<\
+\:0412\:044b\:043f\:043e\:043b\:043d\:0438\:043b\:0430 \:0441\:0442\:0443\
+\:0434\:0435\:043d\:0442\:043a\:0430 \:041c\:041c\:0424 \:0411\:0413\:0423
+\:041a\:041c, 1 \:043a, 5 \:0433\:0440 . \:041a\:043e\:0432\:0430\:043b\:0435\
+\:0432\:0441\:043a\:0430\:044f \:0412 . \:0421 .
+    10 \:043d\:043e\:044f\:0431\:0440\:044f 2021\
+\>", "Text",
+ CellChangeTimes->{
+  3.845527552480052*^9, {3.8460684431503363`*^9, 3.846068446746131*^9}},
+ TextAlignment->Right,ExpressionUUID->"73994d8e-e8e8-4053-9aea-5538352e8841"],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.1", "Section",
+ CellChangeTimes->{{3.8455282595472755`*^9, 3.845528262219099*^9}, {
+  3.8455299972925024`*^9, 
+  3.845529997433166*^9}},ExpressionUUID->"5aeb6acd-a346-4c2a-b168-\
+ed04a9e278d6"],
+
+Cell["\<\
+\:0421\:043e\:0437\:0434\:0430\:0442\:044c \:0432 Mathematica \:043f\:043e\
+\:0434\:0441\:0438\:0441\:0442\:0435\:043c\:0443 \:0434\:043b\:044f \:0440\
+\:0430\:0431\:043e\:0442\:044b \:0441 \:0442\:043e\:0447\:043a\:043e\:0439
+\:043d\:0430 \:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438 : \:0441\
+\:043f\:0440\:043e\:0435\:043a\:0442\:0438\:0440\:043e\:0432\:0430\:0442\:044c\
+ \:0432\:043d\:0443\:0442\:0440\:0435\:043d\:043d\:0435\:0435 \:043f\:0440\
+\:0435\:0434\:0441\:0442\:0430\:0432\:043b\:0435\:043d\:0438\:0435 \:043e\
+\:0431\:044a\:0435\:043a\:0442\:0430 \[LeftGuillemet]\:0442\:043e\:0447\:043a\
+\:0430 \:043d\:0430 \:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\
+\[RightGuillemet], \:0440\:0435\:0430\:043b\:0438\:0437\:043e\:0432\:0430\
+\:0442\:044c \:0441\:043f\:043e\:0441\:043e\:0431\:044b \:0437\:0430\:0434\
+\:0430\:043d\:0438\:044f \:043e\:0431\:044a\:0435\:043a\:0442\:0430, \:0432\
+\:043e\:0437\:043c\:043e\:0436\:043d\:043e\:0441\:0442\:0438 \:0438\:0437\
+\:0432\:043b\:0435\:0447\:0435\:043d\:0438\:044f \:0435\:0433\:043e \:0441\
+\:0432\:043e\:0439\:0441\:0442\:0432, \:043f\:043e\:0441\:0442\:0440\:043e\
+\:0435\:043d\:0438\:044f \:0433\:0440\:0430\:0444\:0438\:0447\:0435\:0441\
+\:043a\:043e\:0433\:043e \:043e\:0431\:0440\:0430\:0437\:0430 .\
+\>", "Text",
+ CellChangeTimes->{{3.8455282838353925`*^9, 
+  3.845528293148218*^9}},ExpressionUUID->"dcd2c974-aeda-4ed9-add4-\
+77dbbc1c2d6d"],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.1", "Subsection",
+ CellChangeTimes->{{3.845528308036234*^9, 
+  3.8455283122083387`*^9}},ExpressionUUID->"3dec3a03-4d5a-4585-a4d6-\
+4893510b6984"],
+
+Cell["\<\
+\:0421\:043f\:0440\:043e\:0435\:043a\:0442\:0438\:0440\:0443\:0439\:0442\:0435\
+ \:0432 Mathematica \:0432\:043d\:0443\:0442\:0440\:0435\:043d\:043d\:0435\
+\:0435 \:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\:043b\:0435\:043d\
+\:0438\:0435 \:043e\:0431\:044a\:0435\:043a\:0442\:0430
+\[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430 \:043d\:0430 \
+\:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\[RightGuillemet] .\
+\>", "Text",
+ CellChangeTimes->{{3.8455283335424685`*^9, 
+  3.8455283344175234`*^9}},ExpressionUUID->"4413fbfb-7925-4738-a35e-\
+944a4009b2f5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"kmPoint", "[", 
+   RowBox[{"km", ",", " ", "id_String", ",", " ", 
+    RowBox[{"coord", ":", " ", 
+     RowBox[{"{", 
+      RowBox[{"_", ",", "_"}], "}"}]}]}], "]"}], 
+  RowBox[{"(*", 
+   RowBox[{
+   "\:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442\:044b", " ", 
+    "\:0442\:043e\:0447\:043a\:0438", " ", "\:0432", " ", 
+    "\:043f\:0440\:044f\:043c\:043e\:0443\:0433\:043e\:043b\:044c\:043d\:043e\
+\:0439", " ", "\:0434\:0435\:043a\:0430\:0440\:0442\:043e\:0432\:043e\:0439", 
+    " ", "\:0441\:0438\:0441\:0442\:0435\:043c\:0435", " ", 
+    "\:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442", " ", 
+    "\:043d\:0430", " ", 
+    "\:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438"}], 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.845528384535637*^9, 3.845528457211035*^9}, {
+  3.846068481294945*^9, 3.8460684848500123`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"c09f1b7b-9aeb-43ae-afa1-dc79ddc15d3a"],
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"km", ",", "id_String", ",", 
+   RowBox[{"coord", ":", 
+    RowBox[{"{", 
+     RowBox[{"_", ",", "_"}], "}"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{3.846068486664691*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"696b54d8-5d02-4672-be19-d56f93c604f2"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.3", "Subsection",
+ CellChangeTimes->{{3.845528782695408*^9, 
+  3.8455287886801033`*^9}},ExpressionUUID->"0ed7a0ab-1a8d-4f74-ac8d-\
+14cd8b952c1c"],
+
+Cell["\<\
+\:0421\:043e\:0437\:0434\:0430\:0439\:0442\:0435 \:043a\:043e\:043d\:0441\
+\:0442\:0440\:0443\:043a\:0442\:043e\:0440 \:043e\:0431\:044a\:0435\:043a\
+\:0442\:0430 \[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430 \:043d\:0430 \
+\:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\[RightGuillemet], \
+\:0442\:0440\:0435\:0431\:0443\:044e\:0449\:0438\:0439
+\:0443\:043a\:0430\:0437\:0430\:043d\:0438\:044f \:0435\:0435 \:0434\:0435\
+\:043a\:0430\:0440\:0442\:043e\:0432\:044b\:0445 \:043a\:043e\:043e\:0440\
+\:0434\:0438\:043d\:0430\:0442 (\:043f\:0440\:044f\:043c\:043e\:0443\:0433\
+\:043e\:043b\:044c\:043d\:0430\:044f \:0434\:0435\:043a\:0430\:0440\:0442\
+\:043e\:0432\:0430 \:0441\:0438\:0441\:0442\:0435\:043c\:0430 \:043a\:043e\
+\:043e\:0440\:0434\:0438\:043d\:0430\:0442) .\
+\>", "Text",
+ CellChangeTimes->{{3.846080254447562*^9, 
+  3.8460802554945097`*^9}},ExpressionUUID->"bc2e2fe9-f4c4-47b2-8f3e-\
+622caa9cfaa5"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "kmPoint", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"coord", ":", 
+     RowBox[{"{", 
+      RowBox[{"_", ",", "_"}], "}"}]}], "]"}], ":=", 
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"km", ",", "\"\<\>\"", ",", "coord"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.845528797186079*^9, 3.845528849756688*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"18780758-a3e7-4dfe-b8dd-1701e547891c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.845528857768026*^9, 3.845528866464426*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"9317f0a4-761d-4ca5-a183-ef1c140df3bb"],
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"km", ",", "\<\"\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8455288671986256`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"b413d6f1-e8bb-44ad-a4c2-2707e228cfd1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.4", "Subsection",
+ CellChangeTimes->{{3.8455289126207714`*^9, 
+  3.8455289280035515`*^9}},ExpressionUUID->"dc60b7f4-ccd8-482e-8063-\
+516c4845de4e"],
+
+Cell["\<\
+\:0421\:043e\:0437\:0434\:0430\:0439\:0442\:0435 \:0432\:043e\:0437\:043c\
+\:043e\:0436\:043d\:043e\:0441\:0442\:044c \:0437\:0430\:0434\:0430\:043d\
+\:0438\:044f \:043e\:0431\:044a\:0435\:043a\:0442\:0430 \
+\[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430\[RightGuillemet] \:043f\:0443\
+\:0442\:0435\:043c \:0443\:043a\:0430\:0437\:0430\:043d\:0438\:044f \:0435\
+\:0435 \:0438\:043c\:0435\:043d\:0438 \:0438 \:0434\:0435\:043a\:0430\:0440\
+\:0442\:043e\:0432\:044b\:0445 \:043a\:043e\:043e\:0440\:0434\:0438\:043d\
+\:0430\:0442 (\:043f\:0440\:044f\:043c\:043e\:0443\:0433\:043e\:043b\:044c\
+\:043d\:0430\:044f \:0434\:0435\:043a\:0430\:0440\:0442\:043e\:0432\:0430 \
+\:0441\:0438\:0441\:0442\:0435\:043c\:0430 \:043a\:043e\:043e\:0440\:0434\
+\:0438\:043d\:0430\:0442) .\
+\>", "Text",
+ CellChangeTimes->{{3.846080317010265*^9, 
+  3.846080321873215*^9}},ExpressionUUID->"5dcf6060-da06-44e2-ac01-\
+89b6fb19ea28"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"id_String", ",", 
+     RowBox[{"coord", ":", 
+      RowBox[{"{", 
+       RowBox[{"_", ",", "_"}], "}"}]}]}], "]"}], ":=", 
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"km", ",", "id", ",", "coord"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8455289743520126`*^9, 3.8455290042236905`*^9}, {
+  3.8455292857395506`*^9, 3.845529301317153*^9}, {3.845529360921095*^9, 
+  3.8455293674702764`*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"ce020b5f-d02a-4f1f-ba95-f4654148b615"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"\"\<A\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.845529306208026*^9, 3.845529325833376*^9}, {
+  3.846080356185795*^9, 3.8460803614312644`*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"ee6d2e2c-fe17-4d9c-8480-47ab6364470b"],
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"km", ",", "\<\"A\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8455293269894805`*^9, 3.846080364003745*^9},
+ CellLabel->"Out[56]=",ExpressionUUID->"3e0aad7c-b507-4530-9a40-01cb1f5ddf4b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"myP", "=", 
+  RowBox[{"kmPoint", "[", 
+   RowBox[{"\"\<\:043c\:043e\:044f \:0422\:043e\:0447\:043a\:0430\>\"", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8455293345933046`*^9, 3.8455293761845193`*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"a27ba8f1-28b4-46fa-b1a0-1e0fcbb5daea"],
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{
+  "km", ",", "\<\"\:043c\:043e\:044f \:0422\:043e\:0447\:043a\:0430\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8455293773405924`*^9, 3.8460803748356023`*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"95c7ac23-9692-4169-8534-964be11a9fc9"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.5", "Subsection",
+ CellChangeTimes->{{3.8460803994053397`*^9, 
+  3.8460804046735754`*^9}},ExpressionUUID->"8d17d7ee-c0a1-42b8-a8ec-\
+940de8a49c33"],
+
+Cell["\<\
+\:0421\:043e\:0437\:0434\:0430\:0439\:0442\:0435 \:0432\:043e\:0437\:043c\
+\:043e\:0436\:043d\:043e\:0441\:0442\:044c \:0437\:0430\:0434\:0430\:043d\
+\:0438\:044f \:043e\:0431\:044a\:0435\:043a\:0442\:0430 \
+\[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430 \:043d\:0430 \
+\:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\[RightGuillemet]
+\:043f\:043e\:0441\:0440\:0435\:0434\:0441\:0442\:0432\:043e\:043c \:0443\
+\:043a\:0430\:0437\:0430\:043d\:0438\:044f \:0435\:0435 \:043f\:043e\:043b\
+\:044f\:0440\:043d\:044b\:0445 \:043a\:043e\:043e\:0440\:0434\:0438\:043d\
+\:0430\:0442 (\:0441\:043e\:0433\:043b\:0430\:0441\:043e\:0432\:0430\:043d\
+\:043d\:044b\:0445 \:0441 \:043f\:0440\:044f\:043c\:043e\:0443\:0433\:043e\
+\:043b\:044c\:043d\:043e\:0439 \:0434\:0435\:043a\:0430\:0440\:0442\:043e\
+\:0432\:043e\:0439 \:0441\:0438\:0441\:0442\:0435\:043c\:043e\:0439 \:043a\
+\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442) .\
+\>", "Text",
+ CellChangeTimes->{{3.846080415240799*^9, 
+  3.846080416350263*^9}},ExpressionUUID->"c2de2779-ecf8-40fb-a14a-\
+9b8fd0e15a97"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"kmPoint", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[EmptySet]_", ",", "\[Rho]_"}], "}"}], ",", "\"\<pol\>\""}], 
+    "]"}], ":=", 
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"km", ",", "\"\<\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\[Rho]", " ", 
+        RowBox[{"Cos", "[", "\[EmptySet]", "]"}]}], ",", 
+       RowBox[{"\[Rho]", " ", 
+        RowBox[{"Sin", "[", "\[EmptySet]", "]"}]}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.845529518254987*^9, 3.845529523686547*^9}, {
+  3.8455296242178802`*^9, 3.845529635881954*^9}, {3.8455296669495087`*^9, 
+  3.845529746871357*^9}},
+ CellLabel->"In[62]:=",ExpressionUUID->"77f1281a-5bde-42fc-bbee-56b2a01163da"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", "2"}], "}"}], ",", "\"\<pol\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8455297537100625`*^9, 3.845529777713022*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"fc30bf6a-6bf8-4a5c-aa2f-479caf5971aa"],
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"km", ",", "\<\"\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SqrtBox["3"]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8455297783845797`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"bed2a6b1-ef85-477e-b76a-8cf0fbcf2c03"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.6", "Subsection",
+ CellChangeTimes->{{3.8455302973665533`*^9, 
+  3.845530302750109*^9}},ExpressionUUID->"83280dc0-68ee-4ac8-9b86-\
+2d51d79d9a08"],
+
+Cell["\<\
+\:0421\:043e\:0437\:0434\:0430\:0439\:0442\:0435 \:0432\:043e\:0437\:043c\
+\:043e\:0436\:043d\:043e\:0441\:0442\:044c \:0437\:0430\:0434\:0430\:043d\
+\:0438\:044f \:043e\:0431\:044a\:0435\:043a\:0442\:0430 \
+\[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430\[RightGuillemet] \:043f\:043e\
+\:0441\:0440\:0435\:0434\:0441\:0442\:0432\:043e\:043c \:0443\:043a\:0430\
+\:0437\:0430\:043d\:0438\:044f \:0435\:0435 \:043f\:043e\:043b\:044f\:0440\
+\:043d\:044b\:0445 \:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442 (\
+\:0441\:043e\:0433\:043b\:0430\:0441\:043e\:0432\:0430\:043d\:043d\:044b\:0445\
+ \:0441 \:043f\:0440\:044f\:043c\:043e\:0443\:0433\:043e\:043b\:044c\:043d\
+\:043e\:0439 \:0434\:0435\:043a\:0430\:0440\:0442\:043e\:0432\:043e\:0439 \
+\:0441\:0438\:0441\:0442\:0435\:043c\:043e\:0439 \:043a\:043e\:043e\:0440\
+\:0434\:0438\:043d\:0430\:0442) \:0438, \:0432\:043e\:0437\:043c\:043e\:0436\
+\:043d\:043e, \:0438\:043c\:0435\:043d\:0438 \:0442\:043e\:0447\:043a\:0438 .\
+\>", "Text",
+ CellChangeTimes->{{3.8460804722320685`*^9, 
+  3.8460804760033894`*^9}},ExpressionUUID->"b04a835a-dbf4-44ac-be32-\
+065457af215b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"id___String", ",", 
+     RowBox[{"{", 
+      RowBox[{"\[EmptySet]_", ",", "\[Rho]_"}], "}"}], ",", "\"\<pol\>\""}], 
+    "]"}], ":=", 
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"km", ",", "id", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\[Rho]", " ", 
+        RowBox[{"Cos", "[", "\[EmptySet]", "]"}]}], ",", 
+       RowBox[{"\[Rho]", " ", 
+        RowBox[{"Sin", "[", "\[EmptySet]", "]"}]}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8460805576838036`*^9, 3.8460805993268447`*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"0d7dac61-bd90-43ec-92f6-9862e815fbd1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"\"\<A\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", "2"}], "}"}], ",", "\"\<pol\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.846080615326275*^9, 3.84608061908717*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"afa97f89-cda0-4ae4-9e2e-bd97d4692b59"],
+
+Cell[BoxData[
+ RowBox[{"kmPoint", "[", 
+  RowBox[{"km", ",", "\<\"A\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SqrtBox["3"]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.846080620212031*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"91f54978-9beb-4a03-8e46-c1b73ad1e1d3"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.2", "Section",
+ CellChangeTimes->{{3.845530008817517*^9, 
+  3.8455300137860956`*^9}},ExpressionUUID->"c66d451a-bbb5-4dac-a4fb-\
+08dbb2744403"],
+
+Cell["\:0421\:0432\:043e\:0439\:0441\:0442\:0432\:0430 \:0433\:0435\:043e\
+\:043c\:0435\:0442\:0440\:0438\:0447\:0435\:0441\:043a\:043e\:0433\:043e \
+\:043e\:0431\:044a\:0435\:043a\:0442\:0430 \[LeftGuillemet]\:0442\:043e\:0447\
+\:043a\:0430 \:043d\:0430 \:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\
+\:0438\[RightGuillemet]", "Text",
+ CellChangeTimes->{{3.846080652057118*^9, 
+  3.8460806602029047`*^9}},ExpressionUUID->"52a275a7-c71c-4d4d-9346-\
+00225f3a2068"],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.7", "Subsection",
+ CellChangeTimes->{{3.8455302816676426`*^9, 
+  3.8455302854940834`*^9}},ExpressionUUID->"13a60f38-4bb0-4e67-b64f-\
+f229b3afdc42"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"kmPoint", "[", 
+     RowBox[{"km", ",", " ", "id_String", ",", "___"}], "]"}], "[", 
+    "\"\<id\>\"", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"id", "==", "\"\<\>\""}], ",", 
+     "\"\<\:0422\:043e\:0447\:043a\:0430\>\"", ",", "id"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8455300488836126`*^9, 3.845530111235243*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"e4c00e7c-fbe0-4406-8702-a4be06d322f4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"kmPoint", "[", 
+   RowBox[{"\"\<A\>\"", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2"}], "}"}]}], "]"}], "[", "\"\<id\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.84553011825125*^9, 3.845530136088085*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"433e2478-44fb-432a-8fa8-a21a8155a18c"],
+
+Cell[BoxData["\<\"A\"\>"], "Output",
+ CellChangeTimes->{3.845530137001933*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"640ae851-c0c9-4995-b7f3-f95439581d68"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"myP", "[", "\"\<id\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.845530168884094*^9, 3.8455301773255835`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"31ec5948-d26b-46bd-8270-14019f8f1e36"],
+
+Cell[BoxData["\<\"\:043c\:043e\:044f \:0422\:043e\:0447\:043a\:0430\"\>"], \
+"Output",
+ CellChangeTimes->{3.8455301780287476`*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"05fc48f7-3539-46c8-8ebe-5fde325627c3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"kmPoint", "[", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "2"}], "}"}], "]"}], "[", "\"\<id\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8455301827632637`*^9, 3.845530200298011*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"a0b3f5cd-0134-451c-8ce1-9952f44dba40"],
+
+Cell[BoxData["\<\"\:0422\:043e\:0447\:043a\:0430\"\>"], "Output",
+ CellChangeTimes->{3.8455302011572247`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"1537667f-8268-400a-9e3c-76915fde3063"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"kmPoint", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "3"], ",", "2"}], "}"}], ",", "\"\<pol\>\""}], 
+   "]"}], "[", "\"\<id\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8455302162570686`*^9, 3.8455302214917183`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"617a0de4-9ce4-40a0-a6f9-6e3ce2713e3b"],
+
+Cell[BoxData["\<\"\:0422\:043e\:0447\:043a\:0430\"\>"], "Output",
+ CellChangeTimes->{3.845530222304273*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"3d6f35e3-a1ca-4113-a024-b7e14d7a4b4e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.8", "Subsection",
+ CellChangeTimes->{{3.845530317018675*^9, 
+  3.8455303230189943`*^9}},ExpressionUUID->"e2312393-ff24-4d96-95a4-\
+459e18fd6438"],
+
+Cell["\<\
+\:041d\:0430\:043f\:0438\:0448\:0438\:0442\:0435 \:043e\:043f\:0435\:0440\
+\:0430\:0442\:043e\:0440, \:0432\:043e\:0437\:0432\:0440\:0430\:0449\:0430\
+\:044e\:0449\:0438\:0439 \:0434\:0435\:043a\:0430\:0440\:0442\:043e\:0432\
+\:044b \:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442\:044b \:0437\
+\:0430\:0434\:0430\:043d\:043d\:043e\:0433\:043e \:043e\:0431\:044a\:0435\
+\:043a\:0442\:0430 \[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430 \
+\:043d\:0430 \:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\
+\[RightGuillemet] .\
+\>", "Text",
+ CellChangeTimes->{{3.845530337502681*^9, 
+  3.845530342690462*^9}},ExpressionUUID->"d28e7ded-5c1d-4996-b3a8-\
+7e89931a5d2c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"kmPoint", "[", 
+     RowBox[{"km", ",", "_String", ",", "coord_List", ",", "___"}], "]"}], 
+    "[", "\"\<coord\>\"", "]"}], ":=", "coord"}], ";"}]], "Input",
+ CellChangeTimes->{{3.8455303490501823`*^9, 3.8455303618758564`*^9}, {
+  3.8455304220659904`*^9, 3.8455304544429293`*^9}},
+ CellLabel->"In[65]:=",ExpressionUUID->"7cb2be24-d8e0-4706-8eec-99d0295a2e03"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"kmPoint", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "3"], ",", "2"}], "}"}], ",", "\"\<pol\>\""}], 
+   "]"}], "[", "\"\<coord\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8455304704711704`*^9, 3.845530474783867*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"207fa31a-d587-4f98-8231-4b8c037abab5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", 
+   SqrtBox["3"]}], "}"}]], "Output",
+ CellChangeTimes->{3.845530476846263*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"9f67def5-b675-4d02-99b1-526142f5b776"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"myP", "[", "\"\<coord\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.845530494958163*^9, 3.8455304975676856`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"23f997e0-3314-4e74-a39e-c9e5e4b10ee0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{3.845530498114374*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"1f06f509-69ff-4e93-a285-8cba049fe8f9"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.9", "Subsection",
+ CellChangeTimes->{{3.845530833091624*^9, 
+  3.8455308438577986`*^9}},ExpressionUUID->"d880e66d-6507-4ae8-b8a3-\
+14bff4a564a9"],
+
+Cell["\<\
+\:041f\:043e\:0441\:0442\:0440\:043e\:0439\:0442\:0435 \:0431\:0443\:043b\
+\:0435\:0432\:0443 \:0444\:0443\:043d\:043a\:0446\:0438\:044e, \:043f\:043e\
+\:0437\:0432\:043e\:043b\:044f\:044e\:0449\:0443\:044e \:043e\:043f\:0440\
+\:0435\:0434\:0435\:043b\:0438\:0442\:044c, \:0438\:043c\:0435\:0435\:0442 \
+\:043b\:0438 \:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\:043b\:0435\
+\:043d\:043d\:044b\:0439 \:043e\:0431\:044a\:0435\:043a\:0442 \
+\[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430 \:043d\:0430 \
+\:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\[RightGuillemet] \
+\:0438\:043c\:044f .\
+\>", "Text",
+ CellChangeTimes->{{3.8455308899641943`*^9, 3.8455308912923946`*^9}, {
+  3.8466785793325*^9, 
+  3.84667857992629*^9}},ExpressionUUID->"a8effd86-d1ca-447d-aeb0-\
+dbb187e7674f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"NamedQ", "[", 
+    RowBox[{"kmPoint", "[", 
+     RowBox[{"km", ",", "id_String", ",", "___"}], "]"}], "]"}], "^:=", 
+   RowBox[{"id", "\[NotEqual]", "\"\<\>\""}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.845530904527254*^9, 3.8455309738387127`*^9}},
+ CellLabel->"In[66]:=",ExpressionUUID->"236817ee-8a20-4818-b476-9b01e05b8eaf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "kmPoint"}]], "Input",
+ CellChangeTimes->{{3.8455311792173023`*^9, 3.845531183448101*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"4e2c1e5c-950e-47f3-bb9e-64e6b315a170"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\"Global`kmPoint\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[
+           TagBox[GridBox[{
+              {
+               StyleBox[
+                TagBox[
+                 TooltipBox[
+                  
+                  StyleBox["\<\" UpValue Definitions\"\>", 
+                   "InformationRowLabel",
+                   StripOnInput->False],
+                  "\"UpValues\"",
+                  TooltipStyle->"TextStyling"],
+                 Annotation[#, "UpValues", "Tooltip"]& ], "DialogStyle",
+                StripOnInput->False]},
+              {
+               TemplateBox[{"\"\[ThinSpace]\"", 
+                 GridBox[{{
+                    RowBox[{
+                    RowBox[{"NamedQ", "[", 
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{"km", ",", "id_String", ",", "___"}], "]"}], 
+                    "]"}], "^:=", 
+                    RowBox[{"id", "\[NotEqual]", "\"\""}]}]}, {" "}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  DefaultBaseStyle -> "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                "RowDefault"]},
+              {
+               StyleBox[
+                TagBox[
+                 TooltipBox[
+                  
+                  StyleBox["\<\" SubValue Definitions\"\>", 
+                   "InformationRowLabel",
+                   StripOnInput->False],
+                  "\"SubValues\"",
+                  TooltipStyle->"TextStyling"],
+                 Annotation[#, "SubValues", "Tooltip"]& ], "DialogStyle",
+                StripOnInput->False]},
+              {
+               TemplateBox[{"\"\[ThinSpace]\"", 
+                 GridBox[{{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{"km", ",", "id_String", ",", "___"}], "]"}], "[", 
+                    "\"id\"", "]"}], ":=", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"id", "\[Equal]", "\"\""}], ",", 
+                    "\"\:0422\:043e\:0447\:043a\:0430\"", ",", "id"}], 
+                    "]"}]}]}, {" "}, {
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"kmPoint", "[", 
+                    
+                    RowBox[{
+                    "km", ",", "_String", ",", "coord_List", ",", "___"}], 
+                    "]"}], "[", "\"coord\"", "]"}], ":=", "coord"}]}, {" "}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  DefaultBaseStyle -> "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                "RowDefault"]},
+              {
+               StyleBox[
+                TagBox[
+                 TooltipBox[
+                  
+                  StyleBox["\<\" DownValue Definitions\"\>", 
+                   "InformationRowLabel",
+                   StripOnInput->False],
+                  "\"DownValues\"",
+                  TooltipStyle->"TextStyling"],
+                 Annotation[#, "DownValues", "Tooltip"]& ], "DialogStyle",
+                StripOnInput->False]},
+              {
+               TemplateBox[{"\"\[ThinSpace]\"", 
+                 GridBox[{{
+                    RowBox[{
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{"coord", ":", 
+                    RowBox[{"{", 
+                    RowBox[{"_", ",", "_"}], "}"}]}], "]"}], ":=", 
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{"km", ",", "\"\"", ",", "coord"}], "]"}]}]}, {
+                   " "}, {
+                    RowBox[{
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{"id_String", ",", 
+                    RowBox[{"coord", ":", 
+                    RowBox[{"{", 
+                    RowBox[{"_", ",", "_"}], "}"}]}]}], "]"}], ":=", 
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{"km", ",", "id", ",", "coord"}], "]"}]}]}, {" "}, {
+                    RowBox[{
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"\[EmptySet]_", ",", "\[Rho]_"}], "}"}], ",", 
+                    "\"pol\""}], "]"}], ":=", 
+                    RowBox[{"kmPoint", "[", 
+                    RowBox[{"km", ",", "\"\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\[Rho]", " ", 
+                    RowBox[{"Cos", "[", "\[EmptySet]", "]"}]}], ",", 
+                    RowBox[{"\[Rho]", " ", 
+                    RowBox[{"Sin", "[", "\[EmptySet]", "]"}]}]}], "}"}]}], 
+                    "]"}]}]}, {" "}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  DefaultBaseStyle -> "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                "RowDefault"]}
+             },
+             DefaultBaseStyle->"Column",
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Column"],
+           FrameMargins->{{6, 0}, {3, 6}}], "\<\"\"\>"},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"Global`kmPoint\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\"Global`kmPoint\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[
+   Association[
+   "ObjectType" -> "Symbol", "Usage" -> "Global`kmPoint", "Documentation" -> 
+    None, "OwnValues" -> None, "UpValues" -> 
+    Information`InformationValueForm[
+     UpValues, $CellContext`kmPoint, {$CellContext`NamedQ[
+         $CellContext`kmPoint[$CellContext`km, 
+          Pattern[$CellContext`id, 
+           Blank[String]], 
+          BlankNullSequence[]]] :> $CellContext`id != ""}], "DownValues" -> 
+    Information`InformationValueForm[
+     DownValues, $CellContext`kmPoint, {$CellContext`kmPoint[
+         Pattern[$CellContext`coord, {
+           Blank[], 
+           Blank[]}]] :> $CellContext`kmPoint[$CellContext`km, 
+         "", $CellContext`coord], $CellContext`kmPoint[
+         Pattern[$CellContext`id, 
+          Blank[String]], 
+         Pattern[$CellContext`coord, {
+           Blank[], 
+           
+           Blank[]}]] :> $CellContext`kmPoint[$CellContext`km, \
+$CellContext`id, $CellContext`coord], $CellContext`kmPoint[{
+          Pattern[$CellContext`\[EmptySet], 
+           Blank[]], 
+          Pattern[$CellContext`\[Rho], 
+           Blank[]]}, "pol"] :> $CellContext`kmPoint[$CellContext`km, 
+         "", {$CellContext`\[Rho] 
+          Cos[$CellContext`\[EmptySet]], $CellContext`\[Rho] 
+          Sin[$CellContext`\[EmptySet]]}]}], "SubValues" -> 
+    Information`InformationValueForm[
+     SubValues, $CellContext`kmPoint, {$CellContext`kmPoint[$CellContext`km, 
+         Pattern[$CellContext`id, 
+          Blank[String]], 
+         BlankNullSequence[]]["id"] :> 
+       If[$CellContext`id == "", 
+         "\:0422\:043e\:0447\:043a\:0430", $CellContext`id], \
+$CellContext`kmPoint[$CellContext`km, 
+         Blank[String], 
+         Pattern[$CellContext`coord, 
+          Blank[List]], 
+         BlankNullSequence[]]["coord"] :> $CellContext`coord}], 
+    "DefaultValues" -> None, "NValues" -> None, "FormatValues" -> None, 
+    "Options" -> None, "Attributes" -> {}, "FullName" -> "Global`kmPoint"], 
+   False]]], "Output",
+ CellChangeTimes->{3.845531184838812*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"c7b6eff5-f9fc-42cd-b926-5f8be83591e1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NamedQ", "[", "myP", "]"}]], "Input",
+ CellChangeTimes->{{3.8455312526464357`*^9, 3.8455312666919355`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"d5427913-56a4-4c0a-b856-cfd08b8e7772"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.845531267238638*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"1cac98fe-d500-4575-ade4-d7beb7ca6aa4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NamedQ", "[", 
+  RowBox[{"kmPoint", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "3"], ",", "2"}], "}"}], ",", "\"\<pol\>\""}], 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8455313017144585`*^9, 3.8455313077895393`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"f92c54be-ef43-4b23-bbe7-1e634a4366d0"],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.845531308273738*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"e7da5e5d-6458-47b4-bdef-7dab60e62714"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.3", "Section",
+ CellChangeTimes->{{3.8460808525658646`*^9, 
+  3.8460808571293926`*^9}},ExpressionUUID->"c398cfc5-ba41-4a36-8eb4-\
+f8ce75611c70"],
+
+Cell["\:041e\:0442\:043e\:0431\:0440\:0430\:0436\:0435\:043d\:0438\:0435 \
+\:0442\:043e\:0447\:043a\:0438 \:043d\:0430 \:0440\:0438\:0441\:0443\:043d\
+\:043a\:0435", "Text",
+ CellChangeTimes->{{3.8460808675070925`*^9, 
+  3.846080872276081*^9}},ExpressionUUID->"766b0411-6a24-4f38-b2a7-\
+2a3bc29d3347"],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2.10", "Subsection",
+ CellChangeTimes->{{3.845530833091624*^9, 3.8455308438577986`*^9}, {
+  3.846080899103656*^9, 
+  3.8460808998642855`*^9}},ExpressionUUID->"a74ce34d-19cd-4818-9bca-\
+4896801fb16c"],
+
+Cell["\<\
+\:0422\:0440\:0438 \:0442\:043e\:0447\:043a\:0438 P1, P2, P3, \:0437\:0430\
+\:0434\:0430\:043d\:043d\:044b\:0435 \:0432 \:043f\:0440\:044f\:043c\:043e\
+\:0443\:0433\:043e\:043b\:044c\:043d\:043e\:0439 \:0434\:0435\:043a\:0430\
+\:0440\:0442\:043e\:0432\:043e\:0439 \:0441\:0438\:0441\:0442\:0435\:043c\
+\:0435 \:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442 \:0441\:043e\
+\:043e\:0442\:0432\:0435\:0442\:0441\:0442\:0432\:0435\:043d\:043d\:043e \
+\:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442\:0430\:043c\:0438 (\
+\[Minus]1, 0), (5, 3), (\[Minus]2, 2) . \:041f\:0440\:0435\:0434\:0441\:0442\
+\:0430\:0432\:044c\:0442\:0435 \:0442\:043e\:0447\:043a\:0438 P1, P2, P3 \
+\:0432 Mathematica, \:043a\:0430\:0436\:0434\:0443\:044e \:043a\:0430\:043a \
+\:044d\:043a\:0437\:0435\:043c\:043f\:043b\:044f\:0440 \:043e\:0431\:044a\
+\:0435\:043a\:0442\:0430 \[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430 \
+\:043d\:0430 \:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\
+\[RightGuillemet], \:0438 \:043e\:0442\:043e\:0431\:0440\:0430\:0437\:0438\
+\:0442\:0435 \:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\:043b\:0435\
+\:043d\:043d\:044b\:0435 \:0442\:043e\:0447\:043a\:0438 \:0432 \:0433\:0440\
+\:0430\:0444\:0438\:0447\:0435\:0441\:043a\:043e\:0439 \:043e\:0431\:043b\
+\:0430\:0441\:0442\:0438.\
+\>", "Text",
+ CellChangeTimes->{{3.846080925232931*^9, 
+  3.846080939358063*^9}},ExpressionUUID->"bfc6b0ab-78ef-46fd-901c-\
+03dbef6a8f66"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"P1", ",", "P2", ",", "P3"}], "}"}], "=", 
+  RowBox[{"kmPoint", "/@", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.8455314146609893`*^9, 3.8455314599762993`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"ccdfa535-560e-4ec3-92d3-33e743016a46"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"km", ",", "\<\"\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0"}], "}"}]}], "]"}], ",", 
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"km", ",", "\<\"\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "3"}], "}"}]}], "]"}], ",", 
+   RowBox[{"kmPoint", "[", 
+    RowBox[{"km", ",", "\<\"\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8455314613357887`*^9, 3.846081169319914*^9, 
+  3.8466467392341113`*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"f9502b60-aaf7-4809-8232-4ece08e017a3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"P1", ",", "P2", ",", "P3"}], "}"}], "//", "TreeForm"}]], "Input",
+ CellChangeTimes->{{3.84553147310676*^9, 3.8455314777227964`*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"dbb78672-a0c6-4343-a824-61b9e2506f72"],
+
+Cell[BoxData[
+ InterpretationBox[
+  GraphicsBox[
+   TagBox[GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGAQBmIQ7Zsy+8jSqSwOJWIvl1U8+GcP4T+x9wPTX+wZoMAP
+Ko4qD+N/gfMh5ryD60u0PWTKv/snnA+zD2Y+zF5U82DyT+wh+jnh/OsX9Gqj
+NNgdYOa9Whn67rAvD5x/5Ds7z0cmITTz+eD6UeVh9onA+RzrAjO8fYTh5k2S
+eqrAcF8UzgcAUN19YQ==
+     "], {
+      {RGBColor[0.55, 0.45, 0.45], 
+       LineBox[{{1, 2}, {1, 8}, {1, 14}, {2, 3}, {2, 4}, {2, 5}, {5, 6}, {5, 
+        7}, {8, 9}, {8, 10}, {8, 11}, {11, 12}, {11, 13}, {14, 15}, {14, 
+        16}, {14, 17}, {17, 18}, {17, 19}}]}, {
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox["List", "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 1],
+         TagBox[
+          RowBox[{"{", 
+            RowBox[{
+              RowBox[{"kmPoint", "[", 
+                RowBox[{"km", ",", "\"\"", ",", 
+                  RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "0"}], "}"}]}], "]"}], ",", 
+              RowBox[{"kmPoint", "[", 
+                RowBox[{"km", ",", "\"\"", ",", 
+                  RowBox[{"{", 
+                    RowBox[{"5", ",", "3"}], "}"}]}], "]"}], ",", 
+              RowBox[{"kmPoint", "[", 
+                RowBox[{"km", ",", "\"\"", ",", 
+                  RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]}], "}"}], 
+          HoldForm]],
+        Annotation[#, 
+         HoldForm[{
+           $CellContext`kmPoint[$CellContext`km, "", {-1, 0}], 
+           $CellContext`kmPoint[$CellContext`km, "", {5, 3}], 
+           $CellContext`kmPoint[$CellContext`km, "", {-2, 2}]}], 
+         "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox["kmPoint", "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 2],
+         TagBox[
+          RowBox[{"kmPoint", "[", 
+            RowBox[{"km", ",", "\"\"", ",", 
+              RowBox[{"{", 
+                RowBox[{
+                  RowBox[{"-", "1"}], ",", "0"}], "}"}]}], "]"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[
+          $CellContext`kmPoint[$CellContext`km, "", {-1, 0}]], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["km",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 3],
+         TagBox["km", HoldForm]],
+        Annotation[#, 
+         HoldForm[$CellContext`km], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["\<\"\"\>",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 4],
+         TagBox["\"\"", HoldForm]],
+        Annotation[#, 
+         HoldForm[""], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox["List", "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 5],
+         TagBox[
+          RowBox[{"{", 
+            RowBox[{
+              RowBox[{"-", "1"}], ",", "0"}], "}"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[{-1, 0}], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox[
+             RowBox[{"-", "1"}],
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 6],
+         TagBox[
+          RowBox[{"-", "1"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[-1], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["0",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 7],
+         TagBox["0", HoldForm]],
+        Annotation[#, 
+         HoldForm[0], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox["kmPoint", "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 8],
+         TagBox[
+          RowBox[{"kmPoint", "[", 
+            RowBox[{"km", ",", "\"\"", ",", 
+              RowBox[{"{", 
+                RowBox[{"5", ",", "3"}], "}"}]}], "]"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[
+          $CellContext`kmPoint[$CellContext`km, "", {5, 3}]], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["km",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 9],
+         TagBox["km", HoldForm]],
+        Annotation[#, 
+         HoldForm[$CellContext`km], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["\<\"\"\>",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 10],
+         TagBox["\"\"", HoldForm]],
+        Annotation[#, 
+         HoldForm[""], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox["List", "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 11],
+         TagBox[
+          RowBox[{"{", 
+            RowBox[{"5", ",", "3"}], "}"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[{5, 3}], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["5",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 12],
+         TagBox["5", HoldForm]],
+        Annotation[#, 
+         HoldForm[5], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["3",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 13],
+         TagBox["3", HoldForm]],
+        Annotation[#, 
+         HoldForm[3], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox["kmPoint", "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 14],
+         TagBox[
+          RowBox[{"kmPoint", "[", 
+            RowBox[{"km", ",", "\"\"", ",", 
+              RowBox[{"{", 
+                RowBox[{
+                  RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[
+          $CellContext`kmPoint[$CellContext`km, "", {-2, 2}]], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["km",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 15],
+         TagBox["km", HoldForm]],
+        Annotation[#, 
+         HoldForm[$CellContext`km], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["\<\"\"\>",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 16],
+         TagBox["\"\"", HoldForm]],
+        Annotation[#, 
+         HoldForm[""], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox["List", "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 17],
+         TagBox[
+          RowBox[{"{", 
+            RowBox[{
+              RowBox[{"-", "2"}], ",", "2"}], "}"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[{-2, 2}], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox[
+             RowBox[{"-", "2"}],
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 18],
+         TagBox[
+          RowBox[{"-", "2"}], HoldForm]],
+        Annotation[#, 
+         HoldForm[-2], "Tooltip"]& ], 
+       TagBox[
+        TooltipBox[InsetBox[
+          FrameBox[
+           StyleBox[
+            TagBox["2",
+             HoldForm], "StandardForm", "Output",
+            StripOnInput->False,
+            LineColor->GrayLevel[0],
+            FrontFaceColor->GrayLevel[0],
+            BackFaceColor->GrayLevel[0],
+            GraphicsColor->GrayLevel[0],
+            FontSize->Scaled[0.0380952380952381],
+            FontColor->GrayLevel[0]],
+           Background->RGBColor[1., 1., 0.871],
+           FrameStyle->GrayLevel[0.5],
+           StripOnInput->False], 19],
+         TagBox["2", HoldForm]],
+        Annotation[#, 
+         HoldForm[2], "Tooltip"]& ]}}],
+    Annotation[#, VertexCoordinateRules -> CompressedData["
+1:eJxTTMoPSmViYGAQBmIQ7Zsy+8jSqSwOJWIvl1U8+GcP4T+x9wPTX+wZoMAP
+Ko4qD+N/gfMh5ryD60u0PWTKv/snnA+zD2Y+zF5U82DyT+wh+jnh/OsX9Gqj
+NNgdYOa9Whn67rAvD5x/5Ds7z0cmITTz+eD6UeVh9onA+RzrAjO8fYTh5k2S
+eqrAcF8UzgcAUN19YQ==
+      "]]& ],
+   AspectRatio->NCache[2 Rational[2, 21]^Rational[1, 2], 0.6172133998483676],
+   FormatType:>StandardForm,
+   FrameTicks->Automatic,
+   PlotRange->All,
+   PlotRangePadding->Scaled[0.1]],
+  TreeForm[{
+    $CellContext`kmPoint[$CellContext`km, "", {-1, 0}], 
+    $CellContext`kmPoint[$CellContext`km, "", {5, 3}], 
+    $CellContext`kmPoint[$CellContext`km, "", {-2, 2}]}],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.845531478738247*^9, 3.846646742255477*^9},
+ CellLabel->
+  "Out[33]//TreeForm=",ExpressionUUID->"66611dff-eb94-4c0b-bfaa-01d09d81b52e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"#", "[", "\"\<coord\>\"", "]"}], "&"}], "/@", 
+  RowBox[{"{", 
+   RowBox[{"P1", ",", "P2", ",", "P3"}], "}"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+       "\:0418\:0437\:0432\:043b\:0435\:0447\:0435\:043c", " ", 
+        "\:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442\:044b", " ", 
+        "\:0438\:0437", " ", 
+        "\:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\:043b\:0435\:043d\
+\:0438\:044f", " ", "\:043a\:0430\:0436\:0434\:043e\:0439", " ", 
+        "\:0442\:043e\:0447\:043a\:0438", " ", 
+        "\:0444\:043e\:0440\:043c\:0438\:0440\:0443\:044f", " ", 
+        "\:0437\:0430\:043f\:0440\:043e\:0441"}], 
+       "\[CloseCurlyDoubleQuote]"}], "coord"}], "\[CloseCurlyDoubleQuote]"}], 
+    " ", "\:043e", " ", 
+    "\:0441\:0432\:043e\:0439\:0441\:0442\:0432\:0430\:0445", " ", 
+    "\:043e\:0431\:044a\:0435\:043a\:0442\:0430", " ", 
+    "\[LeftGuillemet]\:0442\:043e\:0447\:043a\:0430", " ", "\:043d\:0430", 
+    " ", "\:043f\:043b\:043e\:0441\:043a\:043e\:0441\:0442\:0438\
+\[RightGuillemet]"}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.845531648274078*^9, 3.845531676672504*^9}, {
+  3.8460809952938375`*^9, 
+  3.8460810048303213`*^9}},ExpressionUUID->"070c320f-5470-4587-8baf-\
+bbb81633fe05"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8455316778133373`*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"1e07c777-14a3-4b13-a683-7d887524b999"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Point", "/@", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"#", "[", "\"\<coord\>\"", "]"}], "&"}], "/@", 
+    RowBox[{"{", 
+     RowBox[{"P1", ",", "P2", ",", "P3"}], "}"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.8455316955579367`*^9, 3.8455317314290123`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"71c062ab-bc44-4d95-83ce-82ce353bce37"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Point", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "1"}], ",", "0"}], "}"}], "]"}], ",", 
+   RowBox[{"Point", "[", 
+    RowBox[{"{", 
+     RowBox[{"5", ",", "3"}], "}"}], "]"}], ",", 
+   RowBox[{"Point", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "2"}], ",", "2"}], "}"}], "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8455317335541315`*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"a6503259-feba-44ea-937a-b73bbc8cab97"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"Point", "/@", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"#", "[", "\"\<coord\>\"", "]"}], "&"}], "/@", 
+      RowBox[{"{", 
+       RowBox[{"P1", ",", "P2", ",", "P3"}], "}"}]}], ")"}]}], ",", 
+   RowBox[{"Frame", "->", "True"}], ",", 
+   RowBox[{"GridLines", "->", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8455317443282833`*^9, 3.8455318345904627`*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"cb85bbb6-1a44-4342-a0bc-68c0726c709e"],
+
+Cell[BoxData[
+ GraphicsBox[{PointBox[{-1, 0}], PointBox[{5, 3}], PointBox[{-2, 2}]},
+  Frame->True,
+  GridLines->Automatic]], "Output",
+ CellChangeTimes->{{3.8455318199268436`*^9, 3.8455318355120964`*^9}},
+ CellLabel->"Out[26]=",ExpressionUUID->"96e84f63-44a5-47a0-97b7-0ac6aefe6f8c"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "kmGraphics2D", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"kmGraphics2D", "[", 
+    RowBox[{"gp_List", ",", "opts___"}], "]"}], ":=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"Point", "/@", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"#", "[", "\"\<coord\>\"", "]"}], "&"}], "/@", "gp"}], 
+       ")"}]}], ",", "opts"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8455319131824675`*^9, 3.8455320301488595`*^9}, 
+   3.8461337547220316`*^9},
+ CellLabel->"In[68]:=",ExpressionUUID->"6c5e4eef-2afd-45f2-b232-bb71deff70ff"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kmGraphics2D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P1", ",", "P2", ",", "P3"}], "}"}], ",", 
+   RowBox[{"Frame", "->", "True"}], ",", 
+   RowBox[{"GridLines", "->", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8460811933106456`*^9, 3.8460812191339784`*^9}},
+ CellLabel->"In[70]:=",ExpressionUUID->"8bff468f-51cc-4542-81ad-ec6ebc10ca9d"],
+
+Cell[BoxData[
+ GraphicsBox[{PointBox[{-1, 0}], PointBox[{5, 3}], PointBox[{-2, 2}]},
+  Frame->True,
+  GridLines->Automatic]], "Output",
+ CellChangeTimes->{3.846081220706708*^9},
+ CellLabel->"Out[70]=",ExpressionUUID->"691b263e-797a-413e-b8e1-ce3e4d59dc62"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{561.6, 574.8},
+WindowMargins->{{Automatic, 4.2000000000000455`}, {Automatic, 0}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (May 11, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"27d63ed2-a85f-490f-adfb-ddc3f6edeef5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 289, 4, 160, "Title",ExpressionUUID->"438ae5f4-80a7-4a07-8d07-7a363c5dd5a3"],
+Cell[872, 28, 521, 9, 81, "Text",ExpressionUUID->"73994d8e-e8e8-4053-9aea-5538352e8841"],
+Cell[CellGroupData[{
+Cell[1418, 41, 244, 4, 67, "Section",ExpressionUUID->"5aeb6acd-a346-4c2a-b168-ed04a9e278d6"],
+Cell[1665, 47, 1436, 21, 127, "Text",ExpressionUUID->"dcd2c974-aeda-4ed9-add4-77dbbc1c2d6d"],
+Cell[CellGroupData[{
+Cell[3126, 72, 196, 3, 54, "Subsection",ExpressionUUID->"3dec3a03-4d5a-4585-a4d6-4893510b6984"],
+Cell[3325, 77, 576, 10, 81, "Text",ExpressionUUID->"4413fbfb-7925-4738-a35e-944a4009b2f5"],
+Cell[CellGroupData[{
+Cell[3926, 91, 959, 20, 67, "Input",ExpressionUUID->"c09f1b7b-9aeb-43ae-afa1-dc79ddc15d3a"],
+Cell[4888, 113, 302, 7, 32, "Output",ExpressionUUID->"696b54d8-5d02-4672-be19-d56f93c604f2"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5239, 126, 196, 3, 54, "Subsection",ExpressionUUID->"0ed7a0ab-1a8d-4f74-ac8d-14cd8b952c1c"],
+Cell[5438, 131, 930, 15, 104, "Text",ExpressionUUID->"bc2e2fe9-f4c4-47b2-8f3e-622caa9cfaa5"],
+Cell[6371, 148, 500, 12, 48, "Input",ExpressionUUID->"18780758-a3e7-4dfe-b8dd-1701e547891c"],
+Cell[CellGroupData[{
+Cell[6896, 164, 251, 5, 28, "Input",ExpressionUUID->"9317f0a4-761d-4ca5-a183-ef1c140df3bb"],
+Cell[7150, 171, 273, 6, 32, "Output",ExpressionUUID->"b413d6f1-e8bb-44ad-a4c2-2707e228cfd1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7472, 183, 198, 3, 54, "Subsection",ExpressionUUID->"dc60b7f4-ccd8-482e-8063-516c4845de4e"],
+Cell[7673, 188, 918, 15, 81, "Text",ExpressionUUID->"5dcf6060-da06-44e2-ac01-89b6fb19ea28"],
+Cell[8594, 205, 548, 13, 28, "Input",ExpressionUUID->"ce020b5f-d02a-4f1f-ba95-f4654148b615"],
+Cell[CellGroupData[{
+Cell[9167, 222, 336, 7, 28, "Input",ExpressionUUID->"ee6d2e2c-fe17-4d9c-8480-47ab6364470b"],
+Cell[9506, 231, 297, 6, 32, "Output",ExpressionUUID->"3e0aad7c-b507-4530-9a40-01cb1f5ddf4b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9840, 242, 365, 7, 28, "Input",ExpressionUUID->"a27ba8f1-28b4-46fa-b1a0-1e0fcbb5daea"],
+Cell[10208, 251, 350, 7, 32, "Output",ExpressionUUID->"95c7ac23-9692-4169-8534-964be11a9fc9"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10607, 264, 198, 3, 54, "Subsection",ExpressionUUID->"8d17d7ee-c0a1-42b8-a8ec-940de8a49c33"],
+Cell[10808, 269, 1072, 17, 81, "Text",ExpressionUUID->"c2de2779-ecf8-40fb-a14a-9b8fd0e15a97"],
+Cell[11883, 288, 752, 20, 48, "Input",ExpressionUUID->"77f1281a-5bde-42fc-bbee-56b2a01163da"],
+Cell[CellGroupData[{
+Cell[12660, 312, 319, 8, 42, "Input",ExpressionUUID->"fc30bf6a-6bf8-4a5c-aa2f-479caf5971aa"],
+Cell[12982, 322, 288, 7, 36, "Output",ExpressionUUID->"bed2a6b1-ef85-477e-b76a-8cf0fbcf2c03"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13319, 335, 196, 3, 54, "Subsection",ExpressionUUID->"83280dc0-68ee-4ac8-9b86-2d51d79d9a08"],
+Cell[13518, 340, 1130, 17, 104, "Text",ExpressionUUID->"b04a835a-dbf4-44ac-be32-065457af215b"],
+Cell[14651, 359, 668, 18, 48, "Input",ExpressionUUID->"0d7dac61-bd90-43ec-92f6-9862e815fbd1"],
+Cell[CellGroupData[{
+Cell[15344, 381, 335, 8, 42, "Input",ExpressionUUID->"afa97f89-cda0-4ae4-9e2e-bd97d4692b59"],
+Cell[15682, 391, 288, 7, 36, "Output",ExpressionUUID->"91f54978-9beb-4a03-8e46-c1b73ad1e1d3"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16031, 405, 193, 3, 67, "Section",ExpressionUUID->"c66d451a-bbb5-4dac-a4fb-08dbb2744403"],
+Cell[16227, 410, 466, 7, 35, "Text",ExpressionUUID->"52a275a7-c71c-4d4d-9346-00225f3a2068"],
+Cell[CellGroupData[{
+Cell[16718, 421, 198, 3, 54, "Subsection",ExpressionUUID->"13a60f38-4bb0-4e67-b64f-f229b3afdc42"],
+Cell[16919, 426, 493, 13, 28, "Input",ExpressionUUID->"e4c00e7c-fbe0-4406-8702-a4be06d322f4"],
+Cell[CellGroupData[{
+Cell[17437, 443, 327, 8, 28, "Input",ExpressionUUID->"433e2478-44fb-432a-8fa8-a21a8155a18c"],
+Cell[17767, 453, 157, 2, 32, "Output",ExpressionUUID->"640ae851-c0c9-4995-b7f3-f95439581d68"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17961, 460, 212, 3, 28, "Input",ExpressionUUID->"31ec5948-d26b-46bd-8270-14019f8f1e36"],
+Cell[18176, 465, 209, 3, 32, "Output",ExpressionUUID->"05fc48f7-3539-46c8-8ebe-5fde325627c3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18422, 473, 293, 6, 28, "Input",ExpressionUUID->"a0b3f5cd-0134-451c-8ce1-9952f44dba40"],
+Cell[18718, 481, 188, 2, 32, "Output",ExpressionUUID->"1537667f-8268-400a-9e3c-76915fde3063"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18943, 488, 364, 9, 42, "Input",ExpressionUUID->"617a0de4-9ce4-40a0-a6f9-6e3ce2713e3b"],
+Cell[19310, 499, 186, 2, 32, "Output",ExpressionUUID->"3d6f35e3-a1ca-4113-a024-b7e14d7a4b4e"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19545, 507, 196, 3, 54, "Subsection",ExpressionUUID->"e2312393-ff24-4d96-95a4-459e18fd6438"],
+Cell[19744, 512, 683, 12, 58, "Text",ExpressionUUID->"d28e7ded-5c1d-4996-b3a8-7e89931a5d2c"],
+Cell[20430, 526, 420, 9, 28, "Input",ExpressionUUID->"7cb2be24-d8e0-4706-8eec-99d0295a2e03"],
+Cell[CellGroupData[{
+Cell[20875, 539, 365, 9, 42, "Input",ExpressionUUID->"207fa31a-d587-4f98-8231-4b8c037abab5"],
+Cell[21243, 550, 207, 5, 36, "Output",ExpressionUUID->"9f67def5-b675-4d02-99b1-526142f5b776"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21487, 560, 215, 3, 28, "Input",ExpressionUUID->"23f997e0-3314-4e74-a39e-c9e5e4b10ee0"],
+Cell[21705, 565, 194, 4, 32, "Output",ExpressionUUID->"1f06f509-69ff-4e93-a285-8cba049fe8f9"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21948, 575, 196, 3, 54, "Subsection",ExpressionUUID->"d880e66d-6507-4ae8-b8a3-14bff4a564a9"],
+Cell[22147, 580, 799, 14, 58, "Text",ExpressionUUID->"a8effd86-d1ca-447d-aeb0-dbb187e7674f"],
+Cell[22949, 596, 375, 8, 28, "Input",ExpressionUUID->"236817ee-8a20-4818-b476-9b01e05b8eaf"],
+Cell[CellGroupData[{
+Cell[23349, 608, 197, 3, 28, "Input",ExpressionUUID->"4e2c1e5c-950e-47f3-bb9e-64e6b315a170"],
+Cell[23549, 613, 15024, 368, 463, "Output",ExpressionUUID->"c7b6eff5-f9fc-42cd-b926-5f8be83591e1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38610, 986, 210, 3, 28, "Input",ExpressionUUID->"d5427913-56a4-4c0a-b856-cfd08b8e7772"],
+Cell[38823, 991, 152, 2, 32, "Output",ExpressionUUID->"1cac98fe-d500-4575-ade4-d7beb7ca6aa4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39012, 998, 360, 9, 42, "Input",ExpressionUUID->"f92c54be-ef43-4b23-bbe7-1e634a4366d0"],
+Cell[39375, 1009, 153, 2, 32, "Output",ExpressionUUID->"e7da5e5d-6458-47b4-bdef-7dab60e62714"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39589, 1018, 195, 3, 67, "Section",ExpressionUUID->"c398cfc5-ba41-4a36-8eb4-f8ce75611c70"],
+Cell[39787, 1023, 301, 5, 35, "Text",ExpressionUUID->"766b0411-6a24-4f38-b2a7-2a3bc29d3347"],
+Cell[CellGroupData[{
+Cell[40113, 1032, 248, 4, 54, "Subsection",ExpressionUUID->"a74ce34d-19cd-4818-9bca-4896801fb16c"],
+Cell[40364, 1038, 1456, 22, 127, "Text",ExpressionUUID->"bfc6b0ab-78ef-46fd-901c-03dbef6a8f66"],
+Cell[CellGroupData[{
+Cell[41845, 1064, 552, 16, 28, "Input",ExpressionUUID->"ccdfa535-560e-4ec3-92d3-33e743016a46"],
+Cell[42400, 1082, 694, 19, 52, "Output",ExpressionUUID->"f9502b60-aaf7-4809-8232-4ece08e017a3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43131, 1106, 263, 5, 28, "Input",ExpressionUUID->"dbb78672-a0c6-4343-a824-61b9e2506f72"],
+Cell[43397, 1113, 15720, 428, 251, "Output",ExpressionUUID->"66611dff-eb94-4c0b-bfaa-01d09d81b52e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[59154, 1546, 1317, 30, 86, "Input",ExpressionUUID->"070c320f-5470-4587-8baf-bbb81633fe05"],
+Cell[60474, 1578, 395, 12, 32, "Output",ExpressionUUID->"1e07c777-14a3-4b13-a683-7d887524b999"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[60906, 1595, 378, 9, 28, "Input",ExpressionUUID->"71c062ab-bc44-4d95-83ce-82ce353bce37"],
+Cell[61287, 1606, 502, 15, 32, "Output",ExpressionUUID->"a6503259-feba-44ea-937a-b73bbc8cab97"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[61826, 1626, 532, 13, 48, "Input",ExpressionUUID->"cb85bbb6-1a44-4342-a0bc-68c0726c709e"],
+Cell[62361, 1641, 284, 5, 185, "Output",ExpressionUUID->"96e84f63-44a5-47a0-97b7-0ac6aefe6f8c"]
+}, Open  ]],
+Cell[62660, 1649, 649, 18, 67, "Input",ExpressionUUID->"6c5e4eef-2afd-45f2-b232-bb71deff70ff"],
+Cell[CellGroupData[{
+Cell[63334, 1671, 382, 8, 48, "Input",ExpressionUUID->"8bff468f-51cc-4542-81ad-ec6ebc10ca9d"],
+Cell[63719, 1681, 256, 5, 185, "Output",ExpressionUUID->"691b263e-797a-413e-b8e1-ce3e4d59dc62"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
